@@ -4,53 +4,34 @@
 
 ### Contents
 
-- [Acknowledgement](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-- [Images and Videos](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-1. [Basic Theory (PID Algorithm)](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-2. [Hardware Components Required](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-3. [Software Used](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-4. [Hardware Description](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+- [Images and Videos](#images-and-videos)
+1. [Basic Theory (PID Algorithm)]()
+2. [Hardware Components Required]()
+3. [Software Used]()
+4. [Hardware Description]()
     
-    4.1. [QTR-8RC Line Sensor](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    4.1. [QTR-8RC Line Sensor]()
     
-    4.2. [Arduino Nano ATmega328P Board](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    4.2. [Arduino Nano ATmega328P Board]()
     
-    4.3. [TB6612FNG Motor Driver](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    4.3. [TB6612FNG Motor Driver]()
     
-    4.4. [N20 Micro Geared Motor](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    4.4. [N20 Micro Geared Motor]()
     
-    4.5. [5V Step-Up Power Module Lithium Battery Charging Protection Board USB (134N3P)](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    4.5. [5V Step-Up Power Module Lithium Battery Charging Protection Board USB (134N3P)]()
     
-5. [Making The Line Follower Bot](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-6. [Circuit Diagram and Code for PID LFR](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+5. [Making The Line Follower Bot]()
+6. [Circuit Diagram]()
     
-    6.1. [Connections](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
+    6.1. [Connections]()
     
-    6.2. [Source Code](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-    
-7. [From The Makers](https://www.notion.so/PID-LFR-c41c777236164512b8fc00b2cdd37cc2?pvs=21)
-
-# Acknowledgement
-
-This project would not have been possible without the help and constant guidance of our very supportive seniors, who have been with us throughout the making of this project.
-
-- Respected Mr. Pradum Pal sir (Final [B.Tech](http://B.Tech) Electronics Engineering)
-- Respected Mr. Avi Kushwaha sir (Final [B.Tech](http://B.Tech) Mechanical Engineering)
-- Respected Mr. Avinash Kumar sir (Second Year M.C.A.)
-
-This is a small note, on behalf of all our team, to thank them for giving their time and efforts for strengthening our skills and enabling us to finally present this project before you all.
-
-We would also like to hand a sincere thanks to the AUTOROB club for giving us this opportunity.
-
-Hope all you guys reap the maximum benefits out of this tutorial!!
+7. [From The Makers]()
 
 # Images And Videos
 
-![NEW1.png](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/NEW1.png)
+<img src="/src/images/new1.png" width="420" />
 
-![NEW2.png](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/NEW2.png)
-
-[LFR_Video.mp4](https://youtu.be/HDnLGCSrQ0g)
+[![Watch the video](https://img.youtube.com/vi/HDnLGCSrQ0g/0.jpg)](https://youtu.be/HDnLGCSrQ0g)
 
 In this tutorial we will make a **7cm x 9cm** Line Follower Robot using **Arduino Nano** as the controller, **QTR-8RC** as the sensor, **N20 600RPM 6V DC Gear Motor** as the actuator, **3.7V Li-Ion Battery** with DC-DC boost converter as the power system, and PID based control system as the algorithm to follow the line. The Firmware Code of this project is available for Arduino IDE.
 
@@ -66,7 +47,7 @@ The first component of the PID algorithm is the simplest to understand and the m
 
                                                         *Output=Error*Kp*
 
-                                                                                 where Kp is the proportional coefficient
+                                                                        where Kp is the proportional coefficient
 
 **Control Variable:** The control variable is the output of the controller that we get to adjust.
 
@@ -124,7 +105,7 @@ The derivative component is mostly useful when the system is already at or near 
 
 ### ****QTR-8RC Line Sensor****
 
-![qtr-rc1.jpg](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/qtr-rc1.jpg)
+<img src="/src/images/qtr-rc.jpg" align="center" width="50%"/>
 
 QTR-8RC Line Sensor
 
@@ -138,7 +119,7 @@ What does QTR stand for?
 
 ### ****Arduino Nano ATmega328P Board****
 
-![490-4900280_arduino-nano-png.png](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/490-4900280_arduino-nano-png.png)
+<img src="/src/images/arduino-nano.png" align="center" width="30%"/>
 
 Arduino Nano
 
@@ -159,7 +140,7 @@ The Arduino Nano is a small, complete, and breadboard-friendly board based on th
 
 ### ****TB6612FNG Motor Driver****
 
-![TB6612FNG_motorDriver.jpg](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/TB6612FNG_motorDriver.jpg)
+<img src="/src/images/tb6612fng-motor-driver.jpg" align="center" width="30%"/>
 
 The TB6612FNG Motor Driver can control up to two DC motors at a constant current of 1.2A (3.2A peak). Two input signals (IN1 and IN2) can be used to control the motor in one of four function modes: CW, CCW, short-brake and stop. The two motor outputs (A and B) can be separately controlled, and the speed of each motor is controlled via a PWM input signal with a frequency up to 100kHz. The STBY pin should be pulled high to take the motor out of standby mode.
 
@@ -187,7 +168,7 @@ The TB6612FNG Motor Driver can control up to two DC motors at a constant current
 
 ### ****N20 Micro Geared Motor****
 
-![N20_gearMotor.webp](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/N20_gearMotor.webp)
+<img src="/src/images/n20-geared-motor.webp" align="center" width="30%"/>
 
 N20 6V 600RPM Micro Geared Motor is a tiny motor having a gear ratio of 1:100 is a lightweight high torque motor suitable for a variety of industrial, home appliances, and hobby applications. As compared to other motors of this size either with metal or plastic gears, the N20 metal geared motor has a much higher torque to size ratio.
 
@@ -204,7 +185,7 @@ N20 6V 600RPM Micro Geared Motor is a tiny motor having a gear ratio of 1:100 is
 
 ### ****5V Step-Up Power Module Lithium Battery Charging Protection Board USB (134N3P)****
 
-![5V_stepUpConv-transformed.png](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/5V_stepUpConv-transformed.png)
+<img src="/src/images/5V-step-up-converter.png" align="center" width="30%"/>
 
 This 134N3P Charging module has an output of consistent 5V with an input voltage ranging from 3.7V to 5.5V. This module has a built-in MOS for charging and discharging. It has an output current of 1A. The module stops the dispensing power if the input voltage reaches 2.9V. It has a discharge efficiency of 85% with 3.7V input.
 
@@ -232,7 +213,7 @@ Here are the steps to help you proceed with the making of a PID-LFR.
 
 ## Circuit Diagram and Code for PID LFR
 
-![circuit diagram.png](PID%20LFR%20c41c777236164512b8fc00b2cdd37cc2/circuit_diagram.png)
+<img src="/circuit-diagram.png" align="center" width="70%"/>
 
 ### Connections
 
@@ -258,31 +239,30 @@ Here are the steps to help you proceed with the making of a PID-LFR.
 | BIN2 | A0 |
 
 > A1 & A2 → RIGHT MOTOR
-B1 &  B2 →LEFT MOTOR
-VCC & VM →SHORTED
-> 
 
-5V NANO + VCC VM MOTOR DRIVER + VCC QTR8 ARE SHORTED.
+>B1 &  B2 →LEFT MOTOR
 
-ALL THE GROUDS ARE SHORTED.
+>VCC & VM →SHORTED
 
-SWITCH IS CONNECTED WITH THE +VE AFTER THE BOOST CONVERTER.
+> 5V NANO + VCC VM MOTOR DRIVER + VCC QTR8 ARE SHORTED.
 
-+VE IS CONNECTED TO THE VCC AND -VE TO THE GROUND.
+>ALL THE GROUNDS ARE SHORTED.
+
+>SWITCH IS CONNECTED WITH THE +VE AFTER THE BOOST CONVERTER.
+
+>+VE IS CONNECTED TO THE VCC AND -VE TO THE GROUND.
 
 # From The Makers
 
 We would like to introduce ourselves officially after finishing up this tutorial:
 
-- Aryan Singh (Second [B.Tech](http://B.Tech) Electronics Engineering)
-- Shaurya Shukla (Second [B.Tech](http://B.Tech) Civil Engineering)
-- Pragya Singh (Second [B.Tech](http://B.Tech) Information Technology)
-- Japneet Kaur (Second [B.Tech](http://B.Tech) Computer Science Engineering)
+- Aryan Singh (Second [B.Tech] Electronics Engineering)
+- Shaurya Shukla (Second [B.Tech] Civil Engineering)
+- Pragya Singh (Second [B.Tech] Information Technology)
+- Japneet Kaur (Second [B.Tech] Computer Science Engineering)
 
 To end up this project , we all as a team, would like to thank all of you for reading this tutorial. We  hope that you grasp some solid concepts from this tutorial and it will help you in more ways than one.
 
 Thank you all for bearing along!!
 
 All the best for your future!!
-
-              ****
